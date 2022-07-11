@@ -8,6 +8,7 @@ import { Font1 } from "../../Styled/CustomFonts/Font1";
 import { PresentationParagraph } from "./PresentationParagraph";
 import { Link } from "react-router-dom";
 import { UpperBar } from "../../Components/UpperBar/UpperBar";
+import { TecnologiesLogos } from "../../Components/TecnologiesLogos/TecnologiesLogos";
 
 type Props = {};
 
@@ -64,9 +65,28 @@ export const HomePage: FunctionComponent<Props> = ({}) => {
             </Grid>
           </Grid>
         </Box>
-        <Box sx={{ display: "flex" }}></Box>
+        <Box sx={{ display: "flex" }}>
+          <TecnologiesLogos />
+        </Box>
         {/* <ProjectList /> */}
       </Box>
     </CenteredBox>
   );
 };
+
+/**
+ * firebase
+ * material ui
+ * react
+ * redux-toolkit
+ * css
+ * typescript
+ * javascript
+ * node
+ * express
+ * jest
+ * react testing library
+ * gcp
+ * tdd
+ * clean architecture
+ */
