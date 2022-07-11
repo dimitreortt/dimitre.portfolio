@@ -14,6 +14,7 @@ export type FontProps = {
   letterSpacing?: number;
   mx?: number;
   overflow?: string;
+  lineHeight?: number;
 };
 
 export const CustomTypography: FunctionComponent<FontProps> = ({

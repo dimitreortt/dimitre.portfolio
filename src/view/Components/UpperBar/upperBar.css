@@ -1,0 +1,13 @@
+.logo-svg {
+  /* width: 80px; */
+  overflow: visible;
+  stroke: #000;
+  stroke-width: 3;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.logo-svg text {
+  stroke: "#000";
+  stroke-width: 1;
+}
