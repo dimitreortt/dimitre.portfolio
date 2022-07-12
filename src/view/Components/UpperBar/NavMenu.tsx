@@ -5,7 +5,7 @@ import { ResumeButton } from "./ResumeButton";
 
 type Props = {};
 
-const fontSize = 21;
+const fontSize = 19;
 
 const MenuItem = ({ children }: any) => {
   return (

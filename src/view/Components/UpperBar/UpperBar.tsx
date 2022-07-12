@@ -23,10 +23,10 @@ const pathVariants = {
 
 export const UpperBar: FunctionComponent<Props> = ({}) => {
   return (
-    <CustomBox bordered p flex>
+    <CustomBox p flex>
       <Logo />
       <Box sx={{ mr: "auto" }}></Box>
-      <CustomBox bordered p>
+      <CustomBox p>
         <NavMenu />
       </CustomBox>
     </CustomBox>

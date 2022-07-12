@@ -20,13 +20,13 @@ const pathVariants = {
 
 export const Logo: FunctionComponent<Props> = ({}) => {
   return (
-    <CustomBox bordered>
+    <CustomBox>
       <svg
         className="logo-svg"
-        // height="210"
-        // width="400"
-        xmlns="http://www.w3.org/2000/svg"
-        // viewBox="0 0 100 100"
+        height="60"
+        width="60"
+        // xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 46 46"
       >
         <motion.path
           d="M0 14 L0 32 L20 46 L40 32 L40 14 L20 0Z"
