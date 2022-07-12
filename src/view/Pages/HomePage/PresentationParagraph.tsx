@@ -10,12 +10,13 @@ export const PresentationParagraph: FunctionComponent<Props> = ({}) => {
     <CustomBox pm>
       <Box sx={{ mb: 3 }}>
         <Font1 size={14} letterSpacing={3} color={"#999"}>
-          DAMIAN WATRACZ
+          DIMITRE ORTT
         </Font1>
       </Box>
       <Box>
         <Font1 size={60} fontWeight={1000} lineHeight={1}>
-          Website and user interface designer
+          {/* Website and user interface designer */}
+          Fullstack Web Developer
         </Font1>
       </Box>
       <Box sx={{ mt: 3 }}>
