@@ -1,5 +1,6 @@
 import { Box } from "@mui/system";
 import React, { FunctionComponent } from "react";
+import { Link } from "react-router-dom";
 import { Font1 } from "../../Styled/CustomFonts/Font1";
 import { ResumeButton } from "./ResumeButton";
 
@@ -21,7 +22,9 @@ export const NavMenu: FunctionComponent<Props> = ({}) => {
   return (
     <Box>
       <MenuItem>About</MenuItem>
-      <MenuItem>Projects</MenuItem>
+      <Link to="/project/1">
+        <MenuItem>Projects</MenuItem>
+      </Link>
       <MenuItem>Contact</MenuItem>
       <ResumeButton fontSize={fontSize} />
     </Box>

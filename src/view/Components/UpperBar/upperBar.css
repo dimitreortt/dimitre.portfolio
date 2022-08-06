@@ -1,7 +1,8 @@
 .logo-svg {
   /* width: 80px; */
   overflow: visible;
-  stroke: #000;
+  /* stroke: #000; */
+  stroke: #fff;
   stroke-width: 3;
   stroke-linejoin: round;
   stroke-linecap: round;
@@ -10,4 +11,12 @@
 .logo-svg text {
   stroke: "#000";
   stroke-width: 1;
+}
+
+.clipped-svg-path {
+  /* position: absolute; */
+  top: 10px;
+  left: 10px;
+  clip-path: url(#svgTextPath);
+  filter: blur(10px);
 }

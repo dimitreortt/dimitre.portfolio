@@ -34,6 +34,7 @@ export const Logo: FunctionComponent<Props> = ({}) => {
           variants={pathVariants}
           initial="hidden"
           animate="visible"
+          // filter="url(#f2)"
         />
         <motion.path
           d={getSvgString()}
