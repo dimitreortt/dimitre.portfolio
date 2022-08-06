@@ -1,62 +1,44 @@
-import { Box, Grid } from "@mui/material";
 import React, { FunctionComponent } from "react";
-import { CenteredBox } from "../../Styled/CenteredBox";
-import { CustomBox } from "../../Styled/CustomBox";
-import { UpperBar } from "../../Components/UpperBar/UpperBar";
-import { TecnologiesLogos } from "../../Components/TecnologiesLogos/TecnologiesLogos";
-import SocialIcons from "../../Components/SocialIcons/SocialIcons";
-import { PresentationSection } from "./PresentationSection";
+import { HomeSection } from "./HomeSection/HomeSection";
+import { ProjectsSection } from "./ProjectsSection/ProjectsSection";
+import { motion } from "framer-motion";
+import { InitialTransition } from "./InitialTransition";
 
 type Props = {};
 
-export const HomePage: FunctionComponent<Props> = ({}) => {
-  return (
-    <CenteredBox>
-      {/* <Link to="/animated">animated</Link> */}
-      <Box
-        sx={{
-          height: "100%",
-          minHeight: "100vh",
-          boxSizing: "border-box",
-          width: 1200,
-          display: "flex",
-          flexDirection: "column",
-          backgroundSize: "cover",
-          // m: 1,
-          p: 1,
-        }}
-      >
-        <UpperBar />
-        <Box sx={{ marginY: "auto" }}>
-          <Grid container>
-            <PresentationSection />
-          </Grid>
-        </Box>
-        <Box sx={{ display: "flex" }}>
-          <CustomBox sx={{ width: 200, flexGrow: 1 }}>
-            <SocialIcons />
-          </CustomBox>
-          <TecnologiesLogos />
-        </Box>
-        {/* <ProjectList /> */}
-      </Box>
-    </CenteredBox>
-  );
+const containerVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: { delay: 0.5, duration: 2 },
+  },
+  exit: {
+    // x: "-100vw",
+    // transition: {
+    //   ease: "easeInOut",
+    // },
+    opacity: 0,
+  },
 };
 
-/**
- * firebase
- * material ui
- * react
- * redux-toolkit
- * css
- * typescript
- * javascript
- * node
- * express
- * jest
- * react testing library
- * gcp
- * tdd
- * clean architecture
- */
+export const HomePage: FunctionComponent<Props> = ({}) => {
+  return (
+    <div>
+      {/* <InitialTransition /> */}
+      <motion.div
+        // variants={containerVariants}
+        initial={{ opacity: 0 }}
+        animate={{
+          opacity: 1,
+          transition: { delay: 0.5, duration: 2 },
+        }}
+        exit={{ opacity: 0 }}
+      >
+        {/* <ProjectsSection /> */}
+        <HomeSection />
+      </motion.div>
+    </div>
+  );
+};

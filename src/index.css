@@ -18,3 +18,7 @@ code {
   format: ("woff2");
   font-display: swap;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
