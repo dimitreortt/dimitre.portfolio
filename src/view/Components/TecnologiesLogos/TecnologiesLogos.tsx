@@ -1,3 +1,4 @@
+import { Box } from "@mui/material";
 import React, { FunctionComponent } from "react";
 import { LogoCircle } from "./LogoCircle";
 import { logosRefs } from "./logosRefs";
@@ -10,10 +11,10 @@ export const TecnologiesLogos: FunctionComponent<Props> = ({}) => {
   console.log(refs);
 
   return (
-    <div>
+    <Box className="flex">
       {refs.map((ref, index) => (
         <LogoCircle logoData={ref} key={index}></LogoCircle>
       ))}
-    </div>
+    </Box>
   );
 };

@@ -9,6 +9,9 @@ const Img = styled("img")({
   borderColor: "#0cf",
   padding: 1,
   borderRadius: "10%",
+  height: "100%",
+  width: "100%",
+  // objectFit: "cover",
 });
 
 export const LogoCircle: FunctionComponent<Props> = ({ logoData }) => {
@@ -23,7 +26,14 @@ export const LogoCircle: FunctionComponent<Props> = ({ logoData }) => {
       }}
     >
       <a href={logoData.link} target="_blank">
-        <Img height={side} width={side} src={logoData.logoRef} alt="ref" />
+        <Box
+          sx={{
+            height: "45px",
+            width: "45px",
+          }}
+        >
+          <Img src={logoData.logoRef} alt="ref" />
+        </Box>
       </a>
     </Box>
   );
