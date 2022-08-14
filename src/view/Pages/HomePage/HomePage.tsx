@@ -36,8 +36,8 @@ export const HomePage: FunctionComponent<Props> = ({}) => {
         }}
         exit={{ opacity: 0 }}
       >
-        {/* <ProjectsSection /> */}
         <HomeSection />
+        <ProjectsSection />
       </motion.div>
     </div>
   );

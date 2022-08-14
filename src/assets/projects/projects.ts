@@ -22,6 +22,20 @@ export const projects = [
       },
     ],
   },
+  {
+    name: "Integração TMS - Guardião Tec",
+    description:
+      "Neste projeto o objetivo era criar uma plataforma para se cadastrar dados de veículos, itinerários, fichas técnicas, motoristas e o vínculo entre estas entidades. A plataforma é responsável por captar os dados de rastreamento dos veículos gerados constantemente, formatar os dados cadastrados e os dados captados e então integrá-los com os Web Services dos Correios. No frontend, além de serem criadas páginas e formulários para se cadastrar os dados, também foi criado um dashboard onde é possível conferir os resultados das integrações além de dados dos usuários adicionados.",
+    functionalities: [
+      {
+        name: "Cadastro de Motorista",
+        description:
+          "Cadastrar nome, número da cnh, arquivo do documento e contato de um motorista responsável por um itinerário.",
+        imageUrl:
+          "https://firebasestorage.googleapis.com/v0/b/guardiaotec-tms.appspot.com/o/project-images%2Fdriver-page.png?alt=media&token=26616cb7-fab9-4642-947e-99c153cbda73",
+      },
+    ],
+  },
 ];
 
 const func = projects[0].functionalities[0];
