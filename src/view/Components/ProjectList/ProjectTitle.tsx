@@ -21,7 +21,7 @@ export const ProjectTitle: FunctionComponent<Props> = ({ title }) => {
         </Font2>
       </ContentRight>
       <ContentRight>
-        <Font1 size={30} fontWeight={1000} color={""}>
+        <Font1 size={24} fontWeight={1000} color={""}>
           {title}
         </Font1>
       </ContentRight>
