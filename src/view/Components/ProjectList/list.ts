@@ -1,1 +1,5 @@
-export const list = ["DroneReport", "Formfy", "Primosia"];
+export const list = [
+  { name: "DroneReport" },
+  { name: "Formfy" },
+  { name: "Primosia" },
+];

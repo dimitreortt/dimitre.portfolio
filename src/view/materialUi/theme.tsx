@@ -3,6 +3,7 @@ import * as React from "react";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 //@ts-ignore
 // import RalewayWoff2 from "./fonts/Raleway.ttf";
+import { alpha } from "@mui/material/styles";
 
 export const customTheme = createTheme({
   palette: {
