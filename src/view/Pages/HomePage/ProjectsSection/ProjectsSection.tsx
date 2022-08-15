@@ -3,6 +3,8 @@ import { Box } from "@mui/system";
 import React, { FunctionComponent } from "react";
 import { CustomBox } from "../../../Styled/CustomBox";
 import { Font1 } from "../../../Styled/CustomFonts/Font1";
+import { Font2 } from "../../../Styled/CustomFonts/Font2";
+import { ProjectsList } from "./ProjectsList";
 // import { Font1 } from "../../../Styled/CustomFonts/Font1";
 
 type Props = {};
@@ -17,6 +19,7 @@ export const ProjectsSection: FunctionComponent<Props> = ({}) => {
               <Font1 size={30} fontWeight={1000} color={""}>
                 Projects
               </Font1>
+              <ProjectsList />
             </Box>
             Projects{" "}
             {
