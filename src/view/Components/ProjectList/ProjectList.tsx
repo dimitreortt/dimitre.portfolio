@@ -6,7 +6,7 @@ type Props = {};
 
 export const ProjectList: FunctionComponent<Props> = ({}) => {
   return (
-    <div>
+    <div className="text-right">
       {list.map((p) => (
         <ProjectListItem project={p}></ProjectListItem>
       ))}

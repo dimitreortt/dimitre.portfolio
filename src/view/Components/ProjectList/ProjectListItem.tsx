@@ -17,9 +17,13 @@ export const ProjectListItem: FunctionComponent<Props> = ({ project }) => {
           oi
         </Grid>
         <Grid item xs={6} className="border">
-          <ProjectTitle title={project.name} />
-          <ProjectDescription description={project.description as string} />
-          <ProjectTechs techs={project.techs} />
+          <Box
+            sx={{ ml: "-100px", bgcolor: "primary.light", p: 1, boxShadow: 5 }}
+          >
+            <ProjectTitle title={project.name} />
+            <ProjectDescription description={project.description as string} />
+            <ProjectTechs techs={project.techs} />
+          </Box>
         </Grid>
       </Grid>
     </Box>
